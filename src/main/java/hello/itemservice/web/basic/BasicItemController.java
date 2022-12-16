@@ -58,8 +58,6 @@ public class BasicItemController {
     public String addItemV2(@ModelAttribute("item") Item item, Model model){
 
         itemRepository.save(item);
-        //model.addAttribute("item", item);
-        //@ModelAttribute가 item객체를 가져오고, 모델에 자동으로 추가해줌(생략가능)
         return "basic/item";
     }
     //@PostMapping("/add")
@@ -76,8 +74,6 @@ public class BasicItemController {
     public String addItemV4( Item item){
 
         itemRepository.save(item);
-        //model.addAttribute("item", item);
-        //@ModelAttribute가 item객체를 가져오고, 모델에 자동으로 추가해줌(생략가능)
 
         return "basic/item";
     }
