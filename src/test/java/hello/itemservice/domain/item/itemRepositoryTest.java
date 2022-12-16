@@ -1,6 +1,5 @@
 package hello.itemservice.domain.item;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +10,7 @@ import static org.assertj.core.api.Assertions.*;
 
 class itemRepositoryTest {
 
-    itemRepository itemRepository = new itemRepository();
+    ItemRepository itemRepository = new ItemRepository();
 
     @AfterEach
     void afterEach(){
